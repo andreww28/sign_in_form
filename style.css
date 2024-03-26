@@ -1,0 +1,168 @@
+
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: #dddddd;
+  color: #282828;
+  font-family: "Space Mono", monospace;
+}
+
+#bg-img {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 30em;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(255,255,255,0.2)), url('./gym_bg.jpg');
+  filter: blur(2px);
+  background-size: cover;
+}
+
+.img-bg-container {
+  width: 30em;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+} 
+
+.logo-container {
+  display: flex;
+  background: rgba(255,255,255, 0.5);
+  align-items:center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-bottom: 20em;
+} 
+
+#logo{
+  width: 3em;
+  aspect-ratio: 1;
+}
+
+.credit-tag {
+  color: #fff;
+  position: absolute;
+  bottom:10px;
+  left:50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.credit-tag a {
+  color: inherit;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+}
+
+header {
+  padding-inline: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width:100%;
+}
+
+header > p {
+  width: 72ch;
+  line-height: 1.5;
+}
+
+form {
+  background: #b9bbbd;
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: #19385e;
+  box-shadow:5px 5px 3px #757474;
+  border-radius: 5px;
+}
+
+form > h4 {
+  font-size: 1.5rem;
+  font-weight:bold;
+}
+
+.input-container {
+  color: #111;
+  background: #ddd;
+  padding: 1em 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em 2em;
+  border-radius: 3px;
+}
+
+.input-container div {
+  display: flex;
+  flex-direction:column;
+  gap: 0.2em;
+}
+
+.input-container > div > input {
+  padding: 0.5em 0.5em;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+  outline:none;
+}
+
+.error {
+  color: rgb(126, 43, 43);
+  font-size: 0.7rem;
+  display: none;
+}
+
+
+.input-container > div > label{
+  font-size: 0.8rem;
+}
+
+#submit-btn {
+  background: #19385e;
+  padding: 0.5em 1em;
+  color: #fff;
+  border:none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px #646464;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+#submit-btn:hover {
+  background: #295c9a;
+}
+
+.bottom-section {
+  margin-inline: 2em;
+}
+
+#login-link {
+  color: #19385e;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#login-link:hover {
+  color: #295c9a;
+}

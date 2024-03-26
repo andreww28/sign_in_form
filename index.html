@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign up</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main-container">
+        <section class="img-bg-container">
+          <div id="bg-img"></div>
+          <div class="logo-container">
+            <img src="./logo_img.png" alt="Logo of the website" id="logo">
+            <h3>FitGym</h3>
+          </div>
+
+          <p class="credit-tag">
+            Photo by <a href="https://unsplash.com/@brett_jordan?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Brett Jordan</a> on <a href="https://unsplash.com/photos/exercise-equipments-in-grayscale-photography-U2q73PfHFpM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+          </p>
+        </section>
+      
+        <main>
+          <header>
+            <p>It's all about lifestyle. FitGym will help you to change your life the way you didn't imagine and be the best version of yourself. Lets see what your body capable of.</p>
+            <p>The first step: Sign-up now</p>
+          </header>      
+          <form action="" method="post" id="form" novalidate>
+            <h4>Sign Up</h4>
+            <div class="input-container">
+              <div>
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" value="" id="fname" minlength="3" required>
+                <span class="error">Name is too short</span>
+              </div>
+              <div>
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" value="" id="lname" minlength="3" required>
+                <span class="error">Name is too short</span>
+              </div>
+              <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" value="" id="email" required>
+                <span class="error">Name is too short</span>
+              </div>
+              <div>
+                <label for="pnumber">Phone number</label>
+                <input type="tel" name="pnumber" value="" id="pnumber" placeholder="9-xx-xxx-xxxx" pattern="(9-\d{2}-\d{3}-\d{4})" required>
+                <span class="error">Name is too short</span>
+              </div>
+              <div>
+                <label for="pass">Password</label>
+                <input type="password" name="pass" value="" id="pass" minlength="8" required>
+                <span class="error">Name is too short</span>
+              </div>
+              <div>
+                <label for="confirm-pass">Confirm Password</label>
+                <input type="password" name="pass" value="" id="confirm_pass" required>
+                <span class="error">Name is too short</span>
+              </div>
+            </div>
+
+            <div>   
+              <button type="submit" id="submit-btn">Create Account</button>
+            </div>
+          </form>
+          <section class="bottom-section">
+            <p>Already have an account ? <a id="login-link">Log in</a></p>
+          </section>
+        </main>
+      </div>
+
+      <script src="app.js"></script>
+  </body>
+</html>
