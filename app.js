@@ -42,7 +42,7 @@ form.addEventListener("submit", (e) => {
     validate_on_submit(pnum_field, "#pnumber", "Phone number");
     validate_on_submit(email_field, "#email", "Email Address");
     validate_on_submit(pass_field, "#pass", "Password");
-    password_not_match();
+    password_not_match();``
 });
 
 const validate_on_submit = (input, input_id, input_name) => {
